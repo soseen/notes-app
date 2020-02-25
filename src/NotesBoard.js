@@ -1,6 +1,7 @@
 import React from 'react';
 import AddNote from './AddNote';
 import './NotesBoard.css';
+import './fonts/ReenieBeanie-Regular.ttf'
 
 class NotesBoard extends React.Component{
 
