@@ -1,6 +1,6 @@
 
 h1 {
-    font-size: 96px;
+    font-size: 72px;
     color: white;
     margin-bottom: 80px;
 }
@@ -20,7 +20,7 @@ h2 {
 }
 
 .notes-board {
-    width: 75%;
+    width: 70%;
     height: 800px;
     border: 6px solid rgb(99, 48, 19);
     display: flex;
@@ -43,11 +43,8 @@ h2 {
     -webkit-transform:rotate(5deg);
     -o-transform:rotate(5deg);
     -moz-transform:rotate(5deg);
-      /* Firefox */
     -moz-box-shadow: 10px 15px 7px rgba(33,33,33,1);
-    /* Safari+Chrome */
     -webkit-box-shadow: 10px 15px 7px rgba(33,33,33,.7);
-    /* Opera */
     box-shadow: 10px 15px 7px rgba(33,33,33,.7);
 }
 
@@ -88,7 +85,6 @@ h2 {
 
 .note h3 {
     font-size: 23px;
-    /* font-family:"Reenie Beanie",arial,sans-serif; */
     margin-bottom: 5px;
     color: black;
 }
@@ -104,17 +100,3 @@ h2 {
 }
 
 
-
-/* @media screen and (max-width: 1200px){
-  .notes-board {
-    width: 550px;
-  }
-
-} 
-
-@media screen and (max-width: 550px){
-  .notes-board {
-    width: 280px;
-  }
-
-}  */
