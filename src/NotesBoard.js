@@ -1,26 +1,21 @@
-import React from 'react';
-import AddNote from './AddNote';
+import React, {useState, useEffect} from 'react';
+import NewNoteForm from './NewNoteForm';
 import './NotesBoard.css';
 import './fonts/ReenieBeanie-Regular.ttf'
 
-class NotesBoard extends React.Component{
+const NotesBoard = () => {
 
-    state = {
-        notes: ['Ogarnac Redux']
-    }
+    const [notes, setNotes] = useState(['Posprzatac pokoj']);
 
-    addNote = (note) => {
-        let notes = [...this.state.notes, note];
-        this.setState({
-            notes: notes
-        })
+    const addNote = (note) => {
+        let notesArray = [...notes, note];
+        setNotes(notesArray);
     }
-    render(){
         return (
             <div className="board-container">
                 <h1>My Notes</h1>
                 <div className="notes-board">
-                    {this.state.notes.map(item => (
+                    {notes.map(item => (
                         <div key={item} className="note">
                             <span className="pin"></span>
                             <h3>#Note</h3>
@@ -29,10 +24,9 @@ class NotesBoard extends React.Component{
                     ))}
                 </div>
                 <h2>New Note</h2>
-                <AddNote addNewNote={this.addNote}/>
+                <NewNoteForm addNote={addNote}/>
             </div>
           );
-    }
    
 }
 
