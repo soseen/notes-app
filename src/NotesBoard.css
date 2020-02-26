@@ -30,12 +30,11 @@ h2 {
     overflow: auto;
     background-image: url('./board.jpg');
     background-size: cover;
-    background-position: center;
 }
 
 .note {
     overflow: hidden;
-    margin-left: 35px;
+    margin-left: 40px;
     margin-top: 40px;
     width: 200px;
     height: 200px;
@@ -73,14 +72,15 @@ h2 {
 
 
 .note *{
-    margin-left: 25px;
+    margin-left: 6px;
 }
 
 .note p {
     color: black;
     margin-top: 10px;
-    font-family: "Indie Flower";
-    font-size:30px;
+    /* font-family: "Indie Flower"; */
+    font-family: "Courgette";
+    font-size:26px;
 }
 
 .note h3 {

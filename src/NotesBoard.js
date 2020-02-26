@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import NewNoteForm from './NewNoteForm';
 import './NotesBoard.css';
-import './fonts/ReenieBeanie-Regular.ttf'
 
 const NotesBoard = () => {
 
