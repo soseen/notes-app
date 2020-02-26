@@ -21,8 +21,8 @@ const NewNoteForm = ({addNote}) => {
 
     return (
         <div className="add-note-container">
-            <p>Characters: {characters}/30</p>
             <form className="note-form" onSubmit={sendNote}>
+                <p>Characters: {characters}/30</p>
                 <input type="textarea" onChange={getNoteString} maxlength={30} />
             </form>
         </div>

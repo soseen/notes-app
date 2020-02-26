@@ -1,12 +1,18 @@
+.add-note-container {
+    display: flex;
+    justify-content: center;
+}
+
 .note-form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
 }
 
 .note-form input[type=textarea] {
     height: 200px;
-    width: 600px;
+    width: 100%;
     font-size: 45px;
     font-style: italic;
     resize: none;
@@ -14,6 +20,9 @@
     background-color: gray;
 }
 
+.note-form p {
+    align-self: flex-start;
+} 
 
 .add-note-container {
     margin-bottom: 10px;
@@ -21,3 +30,4 @@
     font-size: 20px;
     font-weight: 500;
 }
+

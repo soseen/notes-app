@@ -1,15 +1,18 @@
 body {
     background-color: #202020;
+    width: 100%;
+    margin: auto;
 }
 
 
 .App {
-    display: flex;
+    /* display: flex;
+    flex-shrink: initial;
     flex-direction: column;
     vertical-align: middle;
     justify-content: center;
-    align-items: center;
-}
-
+    align-items: center; */
+    width: 100%;
+} 
 
 
