@@ -11,6 +11,7 @@ const NewNoteForm = ({addNote}) => {
         if(noteToSend.length > 0 && /\S/.test(noteToSend)){
             addNote(noteToSend);
             setNoteToSend('');
+            setCharacters(0);
         }
     }
 
@@ -23,7 +24,7 @@ const NewNoteForm = ({addNote}) => {
         <div className="add-note-container">
             <form className="note-form" onSubmit={sendNote}>
                 <p>Characters: {characters}/30</p>
-                <input type="textarea" onChange={getNoteString} maxlength={30} />
+                <input className="note-input" type="textarea" onChange={getNoteString} maxlength={30} value={noteToSend}/>
             </form>
         </div>
     );

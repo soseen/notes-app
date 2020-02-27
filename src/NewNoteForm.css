@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 800px;
 }
 
 .note-form input[type=textarea] {
@@ -31,3 +31,14 @@
     font-weight: 500;
 }
 
+@media screen and (max-width: 800px) {
+    .note-form {
+        width: 450px;
+    }
+  }
+
+@media screen and (max-width: 480px) {
+    .note-form {
+        width: 300px;
+    }
+  }
